@@ -1,0 +1,35 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  Objective = 280 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Constraint_1 BS      24.00000      24.00000          -Inf       13.33333      -1.25000     250.00000 Constraint_3
+                                            .           48.00000       32.00000       5.00000     400.00000 Constraint_2
+
+     2 Constraint_2 NU      20.00000        .               -Inf       16.00000     -10.00000     240.00000 x3
+                                          10.00000      20.00000       24.00000          +Inf     320.00000 x1
+
+     3 Constraint_3 NU       8.00000        .               -Inf        6.66667     -10.00000     266.66667 x1
+                                          10.00000       8.00000       10.00000          +Inf     300.00000 x3
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  Objective = 280 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x1           BS       2.00000      60.00000        .                -Inf      56.00000     272.00000 x2
+                                            .               +Inf        4.00000      80.00000     320.00000 Constraint_2
+
+     2 x2           NL        .           30.00000        .            -4.00000          -Inf     300.00000 x3
+                                          -5.00000          +Inf        1.60000      35.00000     272.00000 x1
+
+     3 x3           BS       8.00000      20.00000        .           -16.00000      15.00000     240.00000 Constraint_2
+                                            .               +Inf       11.20000      22.50000     300.00000 x2
+
+End of report
